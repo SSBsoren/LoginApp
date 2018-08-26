@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rbg"
+    tools:context=".RegistrationActivity">
+
+    <EditText
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+       android:layout_marginTop="60dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/ebg"
+        android:hint="Name"
+        android:textColor="#474747"
+        android:textAlignment="center"        />
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ebg"
+        android:hint="Email"
+        android:textColor="#474747"
+        android:textAlignment="center"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginLeft="70dp"/>
+
+    <EditText
+        android:id="@+id/psd_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_et"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/ebg"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#474747" />
+
+    <EditText
+        android:id="@+id/repasd_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ebg"
+        android:hint="R-Enter Password"
+        android:textColor="#474747"
+        android:layout_below="@+id/psd_et"
+        android:layout_marginLeft="70dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/signUp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/repasd_et"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/signup" />
+
+    <TextView
+        android:id="@+id/fb_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fb"
+        android:layout_below="@+id/signUp_btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp" />
+
+    <TextView
+        android:id="@+id/google_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/signUp_btn"
+        android:background="@drawable/google"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
